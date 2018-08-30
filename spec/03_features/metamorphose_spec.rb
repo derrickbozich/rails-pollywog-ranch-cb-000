@@ -13,7 +13,7 @@ describe "Metamorphose" do
   end
 
   it "can click on the button and the tadpole becomes a frog" do
-    click('Become a frog')
+    click_on('Become a frog')
 
     # deletes the tadpole from the database
     expect(Tadpole.find_by(:name => @tadpole.name)).to be_nil
