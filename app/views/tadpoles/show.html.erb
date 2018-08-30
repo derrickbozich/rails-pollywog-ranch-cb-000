@@ -6,7 +6,7 @@
     <%= form_for(metamorphose_path(@tadpole)) do |f| %>
       <%= f.submit "Become a frog", :class => 'btn btn-primary' %>
     <% end %>
-    <%= button_to "Become a Frog", metamorphose_path(@tadpole), method: :post %>
+    <%= button_to "Become a Frog", metamorphose_path(@tadpole), method: :post, :class => 'btn btn-primary' %>
   </p>
 
 
