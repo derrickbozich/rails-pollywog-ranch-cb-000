@@ -8,6 +8,9 @@
     <% end %>
     <%= button_to "Become a Frog", metamorphose_path(@tadpole), method: :post, :class => 'btn btn-primary' %>
     <%= button_to 'Become a Frog', {:controller => "tadpoles", :action => "metamorphose", :method=>:post  %>
+    <form action="<%= metamorphose_path(@tadpole)%>"  method="post">
+      <input type="submit" value="Become a Frog" />
+    </form>
   </p>
 
 
